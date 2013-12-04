@@ -1,0 +1,58 @@
+@font-face {
+  font-family: Karla;
+  src: url(../fonts/Karla-Regular.ttf);
+}
+
+body{
+  font-family: 'Karla', sans-serif;
+}
+div.clearboth{
+  clear: both;
+}
+
+#nav #menu-title{
+  margin: 10px 0 0 20px;
+  float: left;
+}
+
+#nav ul{
+  display: block;
+  list-style: none;
+}
+#nav ul li{
+  float: left;
+  font-weight: bold;
+  margin: 80px 20px 0px 20px;
+}
+
+#nav a{
+  text-decoration: none;
+  color:#000;
+}
+#nav a:hover{
+  color:#888;
+}
+#works-container a{
+  text-decoration: none;
+  color:#000;
+
+}
+div.works-card{
+  position: relative;
+  border:1px solid #000;
+  width:196px;
+  height:196px;
+  margin:32px 0px 0px 32px;
+  float:left;
+  padding:10px;
+  background-position: center;
+-moz-background-size:cover;
+background-size:cover;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+div.works-card:hover{
+  opacity: 0.8;
+  }
