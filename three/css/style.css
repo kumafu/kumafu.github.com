@@ -33,7 +33,7 @@ div.clearboth{
 #nav a:hover{
   color:#888;
 }
-#works-container a{
+div#works-container a{
   text-decoration: none;
   color:#000;
 
@@ -73,5 +73,8 @@ div.works-card div.card-desc{
 
 
 div#global-container{
-  margin:24px 0 0 24px;
+  margin:32px 0 0 32px;
+}
+div#works-container{
+  margin:8px 0 0 8px;
 }
