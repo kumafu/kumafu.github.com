@@ -70,3 +70,8 @@ div.works-card div.card-desc{
   color: #666;
   font-size: 10px;
 }
+
+
+div#global-container{
+  margin:24px 0 0 24px;
+}
