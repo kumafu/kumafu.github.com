@@ -5,6 +5,7 @@
 
 body{
   font-family: 'Karla', sans-serif;
+  font-size: 16px;
 }
 div.clearboth{
   clear: both;
@@ -39,20 +40,33 @@ div.clearboth{
 }
 div.works-card{
   position: relative;
-  border:1px solid #000;
-  width:196px;
-  height:196px;
-  margin:32px 0px 0px 32px;
+  background-color: #eee;
+  width:240px;
+  height:165px;
+  margin:24px 0px 0px 24px;
   float:left;
   padding:10px;
-  background-position: center;
--moz-background-size:cover;
-background-size:cover;
   cursor: pointer;
   font-weight: bold;
 }
 
 
+
 div.works-card:hover{
   opacity: 0.8;
   }
+
+div.works-card div.card-image{
+  background-position: center;
+-moz-background-size:cover;
+background-size:cover;
+  width:240px;
+  height:135px;
+}
+div.works-card div.card-title{
+  font-weight: bold;
+}
+div.works-card div.card-desc{
+  color: #666;
+  font-size: 10px;
+}

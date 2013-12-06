@@ -32,9 +32,19 @@ function init(){
 			var numStr = ("0" + (i + 1)).slice(-2);
 			var card = $("<div>")
 				.addClass("works-card")
-				.append("Movie")
-				.css("background-image","url(./img/s-mov_sample_0"+ numStr +".jpg)")
 				.hide();
+            var imgdiv = $("<div>")
+                .addClass("card-image")
+                .css("background-image","url(./img/s-mov_sample_0"+ numStr +".jpg)")
+                .appendTo(card);
+            var title = $("<div>")
+                .addClass("card-title")
+                .append("Movie")
+                .appendTo(card);
+            var title = $("<div>")
+                .addClass("card-desc")
+                .append("description...")
+                .appendTo(card);
 			card.delay(i * 80).fadeIn(800);
 
 			var a = $("<a>").attr("href","./works/works.html");
