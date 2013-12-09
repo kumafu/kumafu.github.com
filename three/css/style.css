@@ -5,14 +5,29 @@
 
 body{
   font-family: 'Karla', sans-serif;
-  font-size: 16px;
+  font-size: 10.5pt;
 }
 div.clearboth{
   clear: both;
 }
+div.horizontal{
+  height:1px;
+  width:100%;
+  background-color: #777;
+
+}
+
+a{
+  text-decoration: none;
+  color:#000;
+
+}
+a:hover{
+  color:#888;
+}
 
 #nav #menu-title{
-  margin: 10px 0 0 20px;
+  margin: 10px 90px 0 20px;
   float: left;
 }
 
@@ -23,16 +38,25 @@ div.clearboth{
 #nav ul li{
   float: left;
   font-weight: bold;
-  margin: 80px 20px 0px 20px;
+  margin: 80px 0px 0px 60px;
 }
 
-#nav a{
-  text-decoration: none;
-  color:#000;
+#footer ul{
+  display: block;
+  list-style: none;
+  margin: 0px 0px 0px 0px;
 }
-#nav a:hover{
-  color:#888;
+#footer ul li{
+  float: left;
+  font-weight: bold;
+  margin: 0px 5px 0px 40px;
 }
+
+div#root-container{
+  width: 950px;
+  margin:0 auto;
+}
+
 div#works-container a{
   text-decoration: none;
   color:#000;
@@ -41,40 +65,68 @@ div#works-container a{
 div.works-card{
   position: relative;
   background-color: #eee;
-  width:240px;
-  height:165px;
-  margin:24px 0px 0px 24px;
+  width:312px;
+  height:208px;
+  margin:7px 7px 0px 0px;
   float:left;
-  padding:10px;
   cursor: pointer;
   font-weight: bold;
-}
-
-
-
-div.works-card:hover{
-  opacity: 0.8;
-  }
-
-div.works-card div.card-image{
   background-position: center;
 -moz-background-size:cover;
 background-size:cover;
-  width:240px;
-  height:135px;
-}
-div.works-card div.card-title{
-  font-weight: bold;
-}
-div.works-card div.card-desc{
-  color: #666;
-  font-size: 10px;
 }
 
+div.works-card-return{
+  margin-right: 0px;
+}
+
+div.works-card div.card-title-base{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #777;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+div.works-card div.card-title-base:hover{
+  opacity: 0.7;
+}
+div.works-card div.card-title{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-weight: bold;
+  color:#fff;
+  opacity: 0;
+  width: 292px;
+  height: 198px;
+  font-size: 24pt;
+  padding:10px;
+}
+div.works-card div.card-title:hover{
+  opacity: 1.0;
+}
 
 div#global-container{
   margin:32px 0 0 32px;
 }
 div#works-container{
-  margin:8px 0 0 8px;
+  margin:0px 0 0 0px;
+}
+
+div#footer{
+  position: fixed;
+  bottom:0px;
+  background-color: #fff;
+  width: 950px;
+  padding-top: 10px;
+  height: 26px;
+  font-size: 10pt;
+}
+div#footer div.float-left{
+  float:left;
+}
+div#footer div.float-right{
+  float:right;
 }

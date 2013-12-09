@@ -32,19 +32,22 @@ function init(){
 			var numStr = ("0" + (i + 1)).slice(-2);
 			var card = $("<div>")
 				.addClass("works-card")
-				.hide();
-            var imgdiv = $("<div>")
-                .addClass("card-image")
                 .css("background-image","url(./img/s-mov_sample_0"+ numStr +".jpg)")
+				.hide();
+            if (i % 3 == 2){
+                card.addClass("works-card-return");
+            }
+            // var imgdiv = $("<div>")
+            //     .addClass("card-image")
+            //     .css("background-image","url(./img/s-mov_sample_0"+ numStr +".jpg)")
+            //     .appendTo(card);
+            var base = $("<div>")
+                .addClass("card-title-base")
                 .appendTo(card);
             var title = $("<div>")
                 .addClass("card-title")
-                .append("Movie")
-                .appendTo(card);
-            var title = $("<div>")
-                .addClass("card-desc")
-                .append("description...")
-                .appendTo(card);
+                .append("Film<br>Spitz<br><br>...<br>2013")
+                .appendTo(base);
 			card.delay(i * 80).fadeIn(800);
 
 			var a = $("<a>").attr("href","./works/works.html");
