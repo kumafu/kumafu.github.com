@@ -2,9 +2,12 @@
   font-family: Karla;
   src: url(../fonts/Karla-Regular.ttf);
 }
-
+@font-face {
+  font-family: Maven;
+  src: url(../fonts/MavenPro-Regular.ttf);
+}
 body{
-  font-family: 'Karla', sans-serif;
+  font-family: 'Maven', sans-serif;
   font-size: 10.5pt;
 }
 div.clearboth{
@@ -55,6 +58,19 @@ a:hover{
 div#root-container{
   width: 950px;
   margin:0 auto;
+}
+
+div#news-title{
+  float:left;
+  margin:10px;
+  width:75px;
+  height:54px;
+}
+div#news-list{
+  float:left;
+  margin:10px;
+  width:835px;
+  height:54px;
 }
 
 div#works-container a{
@@ -113,6 +129,10 @@ div#global-container{
 }
 div#works-container{
   margin:0px 0 0 0px;
+}
+div#works-footer-spacer{
+  width:100%;
+  height:26px;
 }
 
 div#footer{

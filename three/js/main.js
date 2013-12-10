@@ -52,7 +52,7 @@ function init(){
 
 			var a = $("<a>").attr("href","./works/works.html");
 			a.append(card);
-			$("#works-container").append(a);
+			$("#works-footer-spacer").before(a);
 		}
     }
 }
