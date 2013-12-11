@@ -24,6 +24,7 @@
 	<link rel="stylesheet" href="./css/style.css" media="all">
 	<script src="./js/lib/jquery-1.7.1.js"></script>
 	<script src="./js/lib/preloadjs-0.4.0.min.js"></script>
+	<script src="./js/main.js"></script>
 </head>
 <body>
 <div id="root-container">
@@ -32,24 +33,43 @@
 		<div id="nav" class="nonfixed">
 			<div id='menu-title'>
 				<a href="./index.html">
-					<img src='./img/logo.png' width="200">
+					<div id='logo-images'>
+						<div id='logo-mark'></div>
+						<img src='./img/logo_text.png'></img>
+					</div>
 				</a>
 			</div>
 			<ul id='menu-list'>
-				<li><a href="./about.html">ABOUT</a></li>
-				<li><a href="./works.html">WORKS</a></li>
-				<li><a href="./profile.html">PROFILE</a></li>
-				<li><a href="./contact.html">CONTACT</a></li>
-				<li><a href="./recruit.html">RECRUIT</a></li>
+				<li><a href="#works">WORKS</a></li>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#profile">PROFILE</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+				<li><a href="#recruit">RECRUIT</a></li>
 			</ul>
 		</div>
 		<div class='clearboth'></div>
 		<div class='horizontal'></div>
 	</header>
+	<submenu>
+		<div id='submenu'>
+			aaaaa
+		</div>
+	</submenu>
 
-	<section id="about">
-		<div id='global-container'>
-			<h2>About</h2>
+	<section id="company">
+		<div class='normal-container'>
+			<div class='article' id='company-info'>
+				<div class='article-title'>映像事業部　採用情報</div>
+				<div class='article-text'>
+					ただいまスタッフの募集は行っておりません。
+				</div>
+			</div>
+			<div class='article' id='company-privacy'>
+				<div class='article-title'>グラフィックデザイン事業部　採用情報</div>
+				<div class='article-text'>
+					ただいまスタッフの募集は行っておりません。
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -65,8 +85,6 @@
 			</div>
 		</div>
 	</footer>
-
-
 
 </div>
 </body>
