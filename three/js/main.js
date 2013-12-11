@@ -1,8 +1,12 @@
 $(document).ready(function(){
 	init();
+    initEvent();
 });
 
 function init(){
+
+    var windowHeight = document.documentElement.clientHeight;
+    $('div.spacer').css("height",windowHeight);
 
     var queue = new createjs.LoadQueue(true);
     queue.setMaxConnections(100);
@@ -32,8 +36,8 @@ function init(){
 			var numStr = ("0" + (i + 1)).slice(-2);
 			var card = $("<div>")
 				.addClass("works-card")
-                .css("background-image","url(./img/s-mov_sample_0"+ numStr +".jpg)")
-				.hide();
+                .css("background-image","url(./img/s-mov_sample_0"+ numStr +".jpg)");
+				//.hide();
             if (i % 3 == 2){
                 card.addClass("works-card-return");
             }
@@ -48,11 +52,29 @@ function init(){
                 .addClass("card-title")
                 .append("Film<br>Spitz<br><br>...<br>2013")
                 .appendTo(base);
-			card.delay(i * 80).fadeIn(800);
+			//card.delay(i * 80).fadeIn(800);
 
 			var a = $("<a>").attr("href","./works/works.html");
 			a.append(card);
 			$("#works-footer-spacer").before(a);
 		}
     }
+}
+
+function initEvent(){
+    $("#about").bind('inview', function(event, isInView, visiblePartX, visiblePartY) { 
+        console.log("article inview");
+        if (isInView){
+            $("div#submenu").animate({
+                opacity: 1.0,
+                marginLeft: 0
+            }, 400);
+        }else{
+
+            $("div#submenu").animate({
+                opacity: 0,
+                marginLeft: -30
+            }, 400);
+        }
+    });
 }

@@ -73,10 +73,12 @@ background-image: url('../img/logo_mark.png');
   margin: 80px 0px 0px 60px;
 }
 
-#submenu{
+div#submenu{
   width:370px;
   position: fixed;
-
+  top:20px;
+  margin-left: -30px;
+  opacity: 0;
 }
 
 div.submenu-title{
@@ -90,8 +92,15 @@ div.submenu-menu-list{
   border-left:2px solid #000;
 }
 div.submenu-menu-item{
-  height:45px;
+  height:20px;
+  margin-top:25px;
   width:100%;
+
+}
+div.submenu-menu-item img{
+  width:16px;
+  height:16px;
+  margin:0 0 0 5px;
 
 }
 
