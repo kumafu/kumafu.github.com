@@ -1,6 +1,5 @@
 $(document).ready(function(){
 	init();
-    initEvent();
 });
 
 function init(){
@@ -61,23 +60,13 @@ function init(){
 			a.append(card);
 			$("#works-footer-spacer").before(a);
 		}
+        
+        initEvent();
+        initAnchorEvent();
     }
 }
 
 function initEvent(){
-    $('a[href^=#]').click(function() {
-        // スクロールの速度
-        var speed = 400; // ミリ秒
-        // アンカーの値取得
-        var href= $(this).attr("href");
-        // 移動先を取得
-        var target = $(href == "#" || href == "" ? 'html' : href);
-        // 移動先を数値で取得
-        var position = target.offset().top;
-        // スムーススクロール
-        $('body,html').animate({scrollTop:position + 1}, speed, 'swing');
-        return false;
-   });
 
     $("section.contents").bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
         var num = $(this).attr("name");

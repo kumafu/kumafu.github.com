@@ -270,3 +270,8 @@ div.article-text{
 div.profile-text{
   margin-bottom:30px;
 }
+
+div.article-leftblock{
+  display: inline-block;
+  width: 100px;
+}

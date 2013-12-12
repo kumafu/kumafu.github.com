@@ -24,7 +24,9 @@
 	<link rel="stylesheet" href="./css/style.css" media="all">
 	<script src="./js/lib/jquery-1.7.1.js"></script>
 	<script src="./js/lib/preloadjs-0.4.0.min.js"></script>
-	<script src="./js/main.js"></script>
+	<script src="./js/lib/jquery.inview.min.js"></script>
+	<script src="./js/company.js"></script>
+	<script src="./js/base.js"></script>
 </head>
 <body>
 <div id="root-container">
@@ -40,11 +42,11 @@
 				</a>
 			</div>
 			<ul id='menu-list'>
-				<li><a href="#works">WORKS</a></li>
-				<li><a href="#about">ABOUT</a></li>
-				<li><a href="#profile">PROFILE</a></li>
-				<li><a href="#contact">CONTACT</a></li>
-				<li><a href="#recruit">RECRUIT</a></li>
+				<li><a href="./index.html?id=works">WORKS</a></li>
+				<li><a href="./index.html?id=about">ABOUT</a></li>
+				<li><a href="./index.html?id=profile">PROFILE</a></li>
+				<li><a href="./index.html?id=contact">CONTACT</a></li>
+				<li><a href="./index.html?id=recruit">RECRUIT</a></li>
 			</ul>
 		</div>
 		<div class='clearboth'></div>
@@ -52,37 +54,72 @@
 	</header>
 	<submenu>
 		<div id='submenu'>
-			aaaaa
+			<div class='each-submenu' name='1'>
+				<div class='submenu-title'>OUR<br>COMPANY</div>
+				<div class='submenu-menu-list'>
+					<div class='submenu-menu-item'><a href='#company-1'>COMPANY INFORMATION</a></div><br>
+					<div class='submenu-menu-item'><a href='#company-2'>CLIENTS</a></div><br>
+					<div class='submenu-menu-item'><a href='#company-3'>PRIVACY POLICY</a></div>
+				</div>
+				<div class='clearboth'></div>
+			</div>
 		</div>
 	</submenu>
 
-	<section id="company">
+	<section class='contents' id="company" name='1'>
 		<div class='normal-container'>
-			<div class='article' id='company-info'>
-				<div class='article-title'>映像事業部　採用情報</div>
+			<div class='article' id='company-1'>
+				<div class='article-title'>会社概要</div>
 				<div class='article-text'>
-					ただいまスタッフの募集は行っておりません。
+					<div class='article-leftblock'>社　名</div>株式会社THREE IS A MAGIC NUMBER<br>
+					<br>
+					<div class='article-leftblock'>本社所在地</div>東京都世田谷区上馬5丁目15番地15号<br>
+					<br>
+					<div class='article-leftblock'>創　業</div>平成26年1月6日<br>
+					<br>
+					<div class='article-leftblock'>資本金</div>3,000,000円<br>
+					<br>
+					<div class='article-leftblock'>代表取締役</div>北山　大介<br>
+					<br>
+					<div class='article-leftblock'>取締役</div>芦野　紀子<br>
 				</div>
 			</div>
-			<div class='article' id='company-privacy'>
-				<div class='article-title'>グラフィックデザイン事業部　採用情報</div>
+			<div class='article' id='company-2'>
+				<div class='article-title'>お取引先</div>
 				<div class='article-text'>
-					ただいまスタッフの募集は行っておりません。
+					株式会社　あいうえおあいうえお<br>
+					<br>
+					株式会社　あいうえおあいうえお
+				</div>
+			</div>
+			<div class='article' id='company-3'>
+				<div class='article-title'>プライバシーポリシー</div>
+				<div class='article-text'>
+					あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<spacer>
+		<div class='spacer-last'></div>
+	</spacer>
 	<footer>
 		<div id="footer">
-			<div class="float-left">(c)THREE IS A MAGIC NUMBER Inc. is All rights reserved. | <a href="">OUR COMPANY</a> | <a href="">PRIVACY POLICY</a></div>
+			<div id='small-logo-container'>
+				<img id='small-logo' src='./img/logo_mark.png' height='36px'>
+			</div>
+			<div class="float-left">Copyright (c) THREE IS A MAGIC NUMBER Inc. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#company-1">OUR COMPANY</a> | <a href="#company-3">PRIVACY POLICY</a></div>
 			<div class="float-right">
 				<ul id='footer-list'>
-					<li><a href="./">Facebook</a></li>
-					<li><a href="./">Twitter</a></li>
-					<li><a href="./">Instagram</a></li>
+					<li><a href="./"><img src='./img/s_facebook.png'></a></li>
+					<li><a href="./"><img src='./img/s_twitter.png'></a></li>
+					<li><a href="./"><img src='./img/s_youtube.png'></a></li>
+					<li><a href="./"><img src='./img/s_vimeo.png'></a></li>
+					<li><a href="./"><img src='./img/s_insta.png'></a></li>
 				</ul>
 			</div>
+			<div id='footer-pagetop'><a href='#root-container'><img src='./img/pagetop.png'></a></div>
 		</div>
 	</footer>
 
