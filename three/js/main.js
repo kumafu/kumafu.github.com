@@ -6,7 +6,10 @@ $(document).ready(function(){
 function init(){
 
     var windowHeight = document.documentElement.clientHeight;
+    var lastHeight = $("div.article:last").outerHeight(true);
+    console.log(lastHeight);
     $('div.spacer').css("height",windowHeight);
+    $('div.spacer-last').css("height",windowHeight - lastHeight);
 
     var queue = new createjs.LoadQueue(true);
     queue.setMaxConnections(100);
@@ -72,7 +75,7 @@ function initEvent(){
         // 移動先を数値で取得
         var position = target.offset().top;
         // スムーススクロール
-        $('body,html').animate({scrollTop:position}, speed, 'swing');
+        $('body,html').animate({scrollTop:position + 1}, speed, 'swing');
         return false;
    });
 
@@ -98,6 +101,11 @@ function initEvent(){
     });
     $("div.article").bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
         console.log($(this).attr("id") + ":" +isInView + "/" + visiblePartY); 
+        if (isInView && visiblePartY == 'bottom'){
+            $("div.submenu-menu-item").removeClass("submenu-menu-select");
+            var id = $(this).attr("id");
+            $("div.submenu-menu-item a[href=#"+id+"]").parent().addClass("submenu-menu-select");
+        }
     });
 
     $("div#logo-images").bind('inview', function(event, isInView, visiblePartX, visiblePartY) { 
