@@ -62,19 +62,52 @@ function init(){
 }
 
 function initEvent(){
-    $("#about").bind('inview', function(event, isInView, visiblePartX, visiblePartY) { 
-        console.log("article inview");
-        if (isInView){
-            $("div#submenu").animate({
-                opacity: 1.0,
-                marginLeft: 0
-            }, 400);
-        }else{
+    $('a[href^=#]').click(function() {
+        // スクロールの速度
+        var speed = 400; // ミリ秒
+        // アンカーの値取得
+        var href= $(this).attr("href");
+        // 移動先を取得
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        // 移動先を数値で取得
+        var position = target.offset().top;
+        // スムーススクロール
+        $('body,html').animate({scrollTop:position}, speed, 'swing');
+        return false;
+   });
 
-            $("div#submenu").animate({
-                opacity: 0,
-                marginLeft: -30
-            }, 400);
+    $("section.contents").bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        var num = $(this).attr("name");
+        if (isInView){
+            if (num == 0){
+                $("div#submenu").animate({
+                    opacity: 0,
+                    marginLeft: -30
+                }, 400);
+                $("div.each-submenu").fadeOut(400);
+            }
+            else{
+                $("div#submenu").animate({
+                    opacity: 1.0,
+                    marginLeft: 0
+                }, 400);
+                $("div.each-submenu[name!="+num+"]").fadeOut(400);
+                $("div.each-submenu[name="+num+"]").fadeIn(400);
+            }
+        }
+    });
+    $("div.article").bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        console.log($(this).attr("id") + ":" +isInView + "/" + visiblePartY); 
+    });
+
+    $("div#logo-images").bind('inview', function(event, isInView, visiblePartX, visiblePartY) { 
+        if (isInView){
+            $("img#small-logo").fadeOut(400);
+            $("div#footer-pagetop").fadeOut(400);
+        }
+        else{
+            $("img#small-logo").fadeIn(400);
+            $("div#footer-pagetop").fadeIn(400);
         }
     });
 }
