@@ -24,6 +24,9 @@
 	<link rel="stylesheet" href="./css/style.css" media="all">
 	<script src="./js/lib/jquery-1.7.1.js"></script>
 	<script src="./js/lib/preloadjs-0.4.0.min.js"></script>
+	<script src="./js/lib/jquery.inview.min.js"></script>
+	<script src="./js/works.js"></script>
+	<script src="./settings/settings.js"></script>
 </head>
 <body>
 <div id="root-container">
@@ -32,41 +35,58 @@
 		<div id="nav" class="nonfixed">
 			<div id='menu-title'>
 				<a href="./index.html">
-					<img src='./img/logo.png' width="200">
+					<div id='logo-images'>
+						<div id='logo-mark'></div>
+						<img src='./img/logo_text.png'></img>
+					</div>
 				</a>
 			</div>
 			<ul id='menu-list'>
-				<li><a href="./about.html">ABOUT</a></li>
-				<li><a href="./works.html">WORKS</a></li>
-				<li><a href="./profile.html">PROFILE</a></li>
-				<li><a href="./contact.html">CONTACT</a></li>
-				<li><a href="./recruit.html">RECRUIT</a></li>
+				<li><a href="./index.html?id=works">WORKS</a></li>
+				<li><a href="./index.html?id=about">ABOUT</a></li>
+				<li><a href="./index.html?id=profile">PROFILE</a></li>
+				<li><a href="./index.html?id=contact">CONTACT</a></li>
+				<li><a href="./index.html?id=recruit">RECRUIT</a></li>
 			</ul>
 		</div>
 		<div class='clearboth'></div>
 		<div class='horizontal'></div>
 	</header>
+	<submenu>
+		<div id='submenu'>
+			<div class='submenu-works-title'>
+			</div>
+		</div>
+	</submenu>
 
-	<section id="works">
-		<div id='global-container'>
-			<h2>Works</h2>
+	<section class='contents' id="eachwork" name='1'>
+		<div class='normal-container'>
+			<div class='article' id='eachwork-1'>
+			</div>
 		</div>
 	</section>
 
+	<spacer>
+		<div class='spacer-last'></div>
+	</spacer>
 	<footer>
 		<div id="footer">
-			<div class="float-left">(c)THREE IS A MAGIC NUMBER Inc. is All rights reserved. | <a href="">OUR COMPANY</a> | <a href="">PRIVACY POLICY</a></div>
+			<div id='small-logo-container'>
+				<img id='small-logo' src='./img/logo_mark.png' height='36px'>
+			</div>
+			<div class="float-left">Copyright (c) THREE IS A MAGIC NUMBER Inc. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#company-1">OUR COMPANY</a> | <a href="#company-3">PRIVACY POLICY</a></div>
 			<div class="float-right">
 				<ul id='footer-list'>
-					<li><a href="./">Facebook</a></li>
-					<li><a href="./">Twitter</a></li>
-					<li><a href="./">Instagram</a></li>
+					<li><a href="./"><img src='./img/s_facebook.png'></a></li>
+					<li><a href="./"><img src='./img/s_twitter.png'></a></li>
+					<li><a href="./"><img src='./img/s_youtube.png'></a></li>
+					<li><a href="./"><img src='./img/s_vimeo.png'></a></li>
+					<li><a href="./"><img src='./img/s_insta.png'></a></li>
 				</ul>
 			</div>
+			<div id='footer-pagetop'><a href='#root-container'><img src='./img/pagetop.png'></a></div>
 		</div>
 	</footer>
-
-
 
 </div>
 </body>

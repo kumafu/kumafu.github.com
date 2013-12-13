@@ -275,3 +275,14 @@ div.article-leftblock{
   display: inline-block;
   width: 100px;
 }
+div.eachwork-content{
+  width:100%;
+  margin-bottom:10px;
+}
+div.eachwork-content img{
+  width:100%;
+}
+
+div#submenu div.submenu-works-title{
+  font-size:14pt;
+}
