@@ -264,6 +264,30 @@ div.article-gray{
   height:18px;
   margin:10px 0px 10px 40px;
 }
+div.article-text .article-form-input{
+  margin:10px 0 10px 0;
+  width:540px;
+  background-color:#eee;
+  border:none;
+  font-size: 14pt;
+  padding:10px;
+}
+div.article-text .article-form-text{
+  height:200px;
+  font-size: 11pt;
+}
+div.article-text button{
+  background-color:#fff;
+  border:1px solid #000;
+  width: 100px;
+  height: 45px;
+  font-size: 14pt;
+  margin-right:10px;
+  cursor: pointer;
+}
+div.article-text button:hover{
+  background-color:#eee;
+}
 div.article-text{
   padding-left:10px;
 }

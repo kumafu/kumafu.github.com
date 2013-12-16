@@ -7,7 +7,7 @@ function init(){
     var windowHeight = document.documentElement.clientHeight;
     var lastHeight = $("div.article:last").outerHeight(true);
     console.log(lastHeight);
-    $('div.spacer').css("height",windowHeight);
+    $('div.spacer').css("height",windowHeight - 130);
     $('div.spacer-last').css("height",windowHeight - lastHeight);
 
     var queue = new createjs.LoadQueue(true);
