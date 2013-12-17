@@ -28,8 +28,8 @@ function init(){
             var work = THREEWEB.works[i];
 			var card = $("<div>")
 				.addClass("works-card")
-                .css("background-image","url(./img/works/"+work.MainImage+")");
-				//.hide();
+                .css("background-image","url(./img/works/"+work.MainImage+")")
+				.css('opacity',0);
             if (j % 3 == 2){
                 card.addClass("works-card-return");
             }
@@ -40,7 +40,7 @@ function init(){
                 .addClass("card-title")
                 .append(work.Title)
                 .appendTo(base);
-			//card.delay(i * 80).fadeIn(800);
+			card.animate({opacity: 1},2000);
 
 			var a = $("<a>").attr("href","./works.html?id="+j).attr("data-num",j);
 			a.append(card);
