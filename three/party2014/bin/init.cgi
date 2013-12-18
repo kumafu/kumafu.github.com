@@ -91,6 +91,7 @@ $cf{replace} = {
 	'company' => '御社名',
 	'name'  => 'お名前',
 	'email' => 'メールアドレス',
+	'reply' => '参加',
 
 	};
 
@@ -100,7 +101,7 @@ $cf{maxdata} = 102400;
 
 # 送信者へのメール返信
 # 0=no 1=yes
-$cf{auto_res} = 1;
+$cf{auto_res} = 0;
 
 # メール件名（初期値）
 $cf{subject} = 'Party 2014への参加可否';
@@ -138,7 +139,7 @@ $cf{sestime} = 5;
 $cf{reload} = 0;
 
 # 送信後の戻り先【URLパス】
-$cf{back} = 'http://t-h-r-e-e.com/party2014/thanks.html';
+$cf{back} = 'http://t-h-r-e-e.com/party2014/';
 
 # フォームのname値の正当性をチェックする
 # → 半角文字は英数字、アンダーバー、ハイフンはOK。全角は全てOK

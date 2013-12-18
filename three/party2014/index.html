@@ -68,9 +68,11 @@
 		<div id='form-area'>
 			<form action="http://t-h-r-e-e.com/party2014/bin/postmail.cgi" method="post">
 				<div class='form-title'>貴社名</div>
-				<input class='form-input' type="text" name="company"></input>
+				<input class='form-input' type="text" name="_company"></input>
 				<div class='form-title'>お名前</div>
-				<input class='form-input' type="text" name="name"></input>
+				<input class='form-input' type="text" name="_name"></input>
+				<input type="hidden" id='form-reply-yes' name="reply" value="はい" />
+				<input type="hidden" id='form-reply-no' name="reply" value="いいえ" />
 				<button class='form-button' id='form-accept' type="submit">参加する</button>
 				<button class='form-button' id='form-decline' type="submit">参加できない</button>
 			</form>

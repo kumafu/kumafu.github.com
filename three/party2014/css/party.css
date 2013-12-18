@@ -23,6 +23,7 @@ div.clearboth{
 a{
   text-decoration: none;
   color:#000;
+  border:none;
 }
 a:hover{
   color:#888;
@@ -127,4 +128,5 @@ div.access-right{
 
 div.gototop{
   margin:45px 0 20px 0;
+
 }

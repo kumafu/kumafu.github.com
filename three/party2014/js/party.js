@@ -1,5 +1,14 @@
 $(document).ready(function(){
     initAnchorEvent();
+    $('#form-accept').click(function(){
+        $('#form-reply-no').remove();
+        return true;
+    });
+    $('#form-decline').click(function(){
+        $('#form-reply-yes').remove();
+        return true;
+    });
+
 });
 function initAnchorEvent(){
     $('a[href^=#]').click(function() {
