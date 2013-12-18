@@ -11,7 +11,9 @@ $(document).ready(function(){
 
 });
 function initAnchorEvent(){
+    console.log("init");
     $('a[href^=#]').click(function() {
+        console.log("click");
         // スクロールの速度
         var speed = 1200; // ミリ秒
         // アンカーの値取得
