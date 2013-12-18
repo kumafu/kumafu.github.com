@@ -23,7 +23,7 @@ function initAnchorEvent(){
         // 移動先を数値で取得
         var position = target.offset().top;
         // スムーススクロール
-        $('body,html').animate({scrollTop:position + 1}, speed, 'easeInOutCubic');
+        $('body,html').stop().animate({scrollTop:position + 1}, speed, 'easeInOutCubic');
         return false;
    });
 }

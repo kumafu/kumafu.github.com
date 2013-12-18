@@ -7,7 +7,7 @@ function initAnchorEvent(){
         var hash   = '#' + url_sp[url_sp.length - 1];
         var tgt    = $(hash);
         var pos    = tgt.offset().top;
-        $("html, body").animate({scrollTop:pos + 1}, 1200, "easeInOutCubic");
+        $("html, body").stop().animate({scrollTop:pos + 1}, 1200, "easeInOutCubic");
     }
 
     $('a[href^=#]').click(function() {
@@ -20,7 +20,7 @@ function initAnchorEvent(){
         // 移動先を数値で取得
         var position = target.offset().top;
         // スムーススクロール
-        $('body,html').animate({scrollTop:position + 1}, speed, 'easeInOutCubic');
+        $('body,html').stop().animate({scrollTop:position + 1}, speed, 'easeInOutCubic');
         return false;
    });
 }
