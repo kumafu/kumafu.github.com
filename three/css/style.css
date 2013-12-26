@@ -107,6 +107,7 @@ div#sublogo img{
 }
 
 div#submenu{
+  font-size: 13pt;
   width:370px;
   position: fixed;
   top:130px;
@@ -121,7 +122,7 @@ div.each-submenu{
 }
 div.submenu-title{
   float:left;
-  width:72px;
+  width:90px;
 }
 div.submenu-menu-list{
   float:left;
@@ -261,6 +262,7 @@ div.spacer-last{
 }
 
 div.article{
+  letter-spacing: 1pt;
   padding-top:20px;
   margin-bottom:140px;
   font-size: 12pt;
