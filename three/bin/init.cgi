@@ -118,7 +118,7 @@ $cf{multi_sub} = {
 $cf{sub_reply} = 'お問い合わせありがとうございます';
 
 # 本体プログラム【URLパス】
-$cf{mail_cgi} = 'http://t-h-r-e-e.com/bin/postmail.cgi';
+$cf{mail_cgi} = 'http://t-h-r-e-e.com/main/bin/postmail.cgi';
 
 # ログファイル【サーバパス】
 $cf{logfile} = './data/log.cgi';
@@ -139,7 +139,7 @@ $cf{sestime} = 5;
 $cf{reload} = 0;
 
 # 送信後の戻り先【URLパス】
-$cf{back} = 'http://t-h-r-e-e.com/';
+$cf{back} = 'http://t-h-r-e-e.com/main/';
 
 # フォームのname値の正当性をチェックする
 # → 半角文字は英数字、アンダーバー、ハイフンはOK。全角は全てOK
