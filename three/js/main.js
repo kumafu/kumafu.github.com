@@ -42,7 +42,7 @@ function init(){
                 .appendTo(base);
 			card.stop().animate({opacity: 1},2000);
 
-			var a = $("<a>").attr("href","./works.html?id="+j).attr("data-num",j);
+			var a = $("<a>").attr("href","./work.html?id="+j).attr("data-num",j);
 			a.append(card);
 			$("#works-footer-spacer").before(a);
             j++;
@@ -102,10 +102,4 @@ function initEvent(){
         }
     });
 
-    $("div#logo-images").bind('inview', function(event, isInView, visiblePartX, visiblePartY) { 
-        if (isInView){
-        }
-        else{
-        }
-    });
 }
