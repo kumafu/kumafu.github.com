@@ -209,17 +209,17 @@
 				<div class='article-text'>
 					弊社へのお問い合わせ、お仕事に関してのご相談など、こちらのフォームよりお申込み下さい。<br>
 					<br>
-					<form>
+					<form action="http://t-h-r-e-e.com/bin/postmail.cgi" method="post">
 						<div class='article-form-title'>YOUR COMPANY / 貴社名</div>
-						<input class='article-form-input'>
+						<input class='article-form-input' name='company'>
 						<div class='article-form-title'>YOUR NAME / 御担当者名</div>
-						<input class='article-form-input'>
+						<input class='article-form-input' name='_name'>
 						<div class='article-form-title'>YOUR CONTACT / 貴社ご連絡先</div>
-						<input class='article-form-input'>
+						<input class='article-form-input' name='_contact'>
 						<div class='article-form-title'>DESCRIPTION / ご相談内容</div>
-						<textarea class='article-form-input article-form-text'></textarea>
-						<button class='article-form-button'>Submit</button>
-						<button class='article-form-button'>Clear</button>
+						<textarea class='article-form-input article-form-text' name='_desc'></textarea>
+						<button class='article-form-button' type='submit'>Submit</button>
+						<button class='article-form-button' type='clear'>Clear</button>
 					</form>
 				</div>
 			</div>
