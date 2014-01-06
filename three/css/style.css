@@ -82,7 +82,10 @@ div.header-right ul li{
 }
 
 img.sns-icon-sw{
-  width:24px;
+  height:24px;
+}
+img.sns-icon-footer{
+  height:36px;
 }
 
 div.header-menu{
@@ -107,7 +110,7 @@ div#sublogo img{
 }
 
 div#submenu{
-  font-size: 13pt;
+  font-size: 11pt;
   width:370px;
   position: fixed;
   top:130px;
@@ -265,7 +268,7 @@ div.article{
   letter-spacing: 1pt;
   padding-top:20px;
   margin-bottom:140px;
-  font-size: 12pt;
+  font-size: 11pt;
 }
 div.article-title{
   font-weight: bold;
