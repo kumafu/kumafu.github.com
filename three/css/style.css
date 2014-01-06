@@ -132,10 +132,13 @@ div.submenu-menu-list{
   padding:0 0 0 10px;
   border-left:2px solid #000;
 }
+div.submenu-menu-item-space{
+
+  margin-bottom:25px;
+}
 div.submenu-menu-item{
   display: inline-block;
   height:18px;
-  margin-top:25px;
   border-bottom: 2px solid #fff;
 
 }
@@ -266,8 +269,8 @@ div.spacer-last{
 
 div.article{
   letter-spacing: 1pt;
-  padding-top:20px;
-  margin-bottom:140px;
+  padding-top:120px;
+  margin-bottom:20px;
   font-size: 11pt;
 }
 div.article-title{
