@@ -8,7 +8,7 @@
 }
 body{
   font-family: 'Maven', sans-serif;
-  font-size: 10.5pt;
+  font-size: 9.8pt;
 }
 div.float-left{
   float: left;
@@ -22,7 +22,7 @@ div.clearboth{
 div.horizontal{
   height:1px;
   width:100%;
-  background-color: #777;
+  background-color: #4C4C4C;
 
 }
 
@@ -69,6 +69,9 @@ ul.menu-list li{
   margin: 0px 0px 0px 60px;
 }
 
+div.copyright{
+  font-size: 6pt;
+}
 
 div.header-right{
   position: absolute;
@@ -235,7 +238,7 @@ div.works-card div.card-title{
   opacity: 0;
   width: 292px;
   height: 198px;
-  font-size: 24pt;
+  font-size: 14pt;
   padding:10px;
 }
 div.works-card div.card-title:hover{
@@ -271,7 +274,7 @@ div.article{
   letter-spacing: 1pt;
   padding-top:120px;
   margin-bottom:20px;
-  font-size: 11pt;
+  font-size: 8.25pt;
 }
 div.article-title{
   font-weight: bold;

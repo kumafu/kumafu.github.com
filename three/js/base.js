@@ -10,7 +10,7 @@ function initAnchorEvent(){
         $("html, body").stop().animate({scrollTop:pos + 1}, 1200, "easeInOutCubic");
     }
 
-    $('a[href^=#]').click(function() {
+    $('a[href^=#][rel!=lightbox]').click(function() {
         // スクロールの速度
         var speed = 1200; // ミリ秒
         // アンカーの値取得

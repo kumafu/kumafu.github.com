@@ -22,6 +22,12 @@ function init(){
 
     queue.addEventListener("complete",handleComplete);
 
+    $('a[rel*=lightbox]').fancybox({
+        'type':'inline',
+        'overlayOpacity':0.0,
+        'hideOnContentClick':true,
+    });
+
     function handleComplete(event){
         var j = 0;
 		for (var i in THREEWEB.works){
@@ -82,7 +88,7 @@ function initEvent(){
                 }, 400);
                 $("div#footer").stop().animate({
                     opacity: 1.0,
-                    bottom: 10
+                    bottom: 0
                 }, 400);
                 $("div#sublogo").stop().animate({
                     marginTop: 0,
