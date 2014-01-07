@@ -74,10 +74,10 @@ function initEvent(){
                     opacity: 0,
                     bottom: -43
                 }, 400);
-                $("div#sublogo").stop().animate({
-                    marginLeft: -43,
-                    opacity: 0
-                }, 400);
+                // $("div#sublogo").stop().animate({
+                //     marginLeft: -43,
+                //     opacity: 0
+                // }, 400);
                 $("div.each-submenu").fadeOut(400);
             }
             else{
@@ -90,10 +90,10 @@ function initEvent(){
                     opacity: 1.0,
                     bottom: 0
                 }, 400);
-                $("div#sublogo").stop().animate({
-                    marginLeft: 5,
-                    opacity: 1.0
-                }, 400);
+                // $("div#sublogo").stop().animate({
+                //     marginLeft: 5,
+                //     opacity: 1.0
+                // }, 400);
                 $("div.each-submenu[name!="+num+"]").fadeOut(400);
                 $("div.each-submenu[name="+num+"]").fadeIn(400);
             }

@@ -132,6 +132,11 @@ div.each-submenu{
   left:0px;
   display: none;
 }
+div.submenu-logo{
+  position: relative;
+  top:-110px;
+  left:-12px;
+}
 div.submenu-title{
   float:left;
   width:90px;
