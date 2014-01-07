@@ -288,7 +288,7 @@ div.article{
   font-size: 9pt;
 }
 div.article-title{
-  font-weight: bold;
+  font-weight: normal;
   border-left: 1px solid #ccc;
   padding-left:10px;
   height:18px;
@@ -296,7 +296,7 @@ div.article-title{
 }
 div.article-gray{
   color:#ccc;
-  font-weight: bold;
+  font-weight: normal;
   border-left: 1px solid #ccc;
   padding-left:10px;
   height:18px;
