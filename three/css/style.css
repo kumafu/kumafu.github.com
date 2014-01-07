@@ -22,7 +22,7 @@ div.clearboth{
 div.horizontal{
   height:1px;
   width:100%;
-  background-color: #4C4C4C;
+  background-color: #bfbfbf;
 
 }
 
@@ -66,7 +66,7 @@ ul{
 ul.menu-list li{
   float: left;
   font-weight: bold;
-  margin: 0px 0px 0px 60px;
+  margin: 0px 0px 0px 67px;
 }
 
 div.copyright{
@@ -202,9 +202,9 @@ div#works-container a{
 div.works-card{
   position: relative;
   background-color: #eee;
-  width:312px;
-  height:208px;
-  margin:7px 7px 0px 0px;
+  width:300px;
+  height:200px;
+  margin:25px 25px 0px 0px;
   float:left;
   cursor: pointer;
   font-weight: bold;
