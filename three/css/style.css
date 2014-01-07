@@ -84,6 +84,12 @@ div.header-right ul li{
   margin: 10px 0px 0px 20px;
 }
 
+img.sns-icon{
+  opacity: 0.7;
+}
+img.sns-icon:hover{
+  opacity: 1.0;
+}
 img.sns-icon-sw{
   height:24px;
 }
