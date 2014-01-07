@@ -194,15 +194,15 @@ div#root-container{
 
 div#news-title{
   float:left;
-  margin:10px;
-  width:75px;
-  height:54px;
+  margin:12px;
+  width:71px;
+  height:50px;
 }
 div#news-list{
   float:left;
-  margin:10px;
-  width:835px;
-  height:54px;
+  margin:12px;
+  width:831px;
+  height:50px;
 }
 
 div#works-container a{
