@@ -300,15 +300,15 @@ div.article-text .article-form-input{
   padding:10px;
 }
 div.article-text .article-form-text{
-  height:200px;
+  height:130px;
   font-size: 11pt;
 }
 div.article-text button{
   background-color:#fff;
   border:1px solid #000;
-  width: 100px;
-  height: 45px;
-  font-size: 14pt;
+  width: 70px;
+  height: 35px;
+  font-size: 9pt;
   margin-right:10px;
   cursor: pointer;
 }
