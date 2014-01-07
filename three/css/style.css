@@ -88,7 +88,7 @@ img.sns-icon-sw{
   height:24px;
 }
 img.sns-icon-footer{
-  height:36px;
+  height:24px;
 }
 
 div.header-menu{
@@ -133,7 +133,7 @@ div.submenu-title{
 div.submenu-menu-list{
   float:left;
   padding:0 0 0 10px;
-  border-left:2px solid #000;
+  border-left:1px solid #000;
 }
 div.submenu-menu-item-space{
 
@@ -142,11 +142,11 @@ div.submenu-menu-item-space{
 div.submenu-menu-item{
   display: inline-block;
   height:18px;
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
 
 }
 div.submenu-menu-list div.submenu-menu-select{
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #000;
 
 }
 div.submenu-menu-item img{
@@ -173,7 +173,7 @@ div.footer-menu{
 ul.footer-sns-list li{
   float: left;
   font-weight: bold;
-  margin: 0px 10px 0px 10px;
+  margin: 6px 10px 0px 15px;
 }
 
 div#root-container{
@@ -278,7 +278,7 @@ div.article{
 }
 div.article-title{
   font-weight: bold;
-  border-left: 3px solid #ccc;
+  border-left: 1px solid #ccc;
   padding-left:10px;
   height:18px;
   margin:10px 0px 10px 0px;
@@ -286,7 +286,7 @@ div.article-title{
 div.article-gray{
   color:#ccc;
   font-weight: bold;
-  border-left: 3px solid #ccc;
+  border-left: 1px solid #ccc;
   padding-left:10px;
   height:18px;
   margin:10px 0px 10px 40px;
