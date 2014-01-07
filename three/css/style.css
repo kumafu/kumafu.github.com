@@ -104,8 +104,8 @@ div#sublogo{
   height: 100px;
   position: fixed;
   top:20px;
-  margin-left:5px;
-  margin-top: -200px;
+  margin-left:-43px;
+  opacity: 0;
 }
 div#sublogo img{
   width:200px;

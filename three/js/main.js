@@ -75,7 +75,7 @@ function initEvent(){
                     bottom: -43
                 }, 400);
                 $("div#sublogo").stop().animate({
-                    marginTop: -200,
+                    marginLeft: -43,
                     opacity: 0
                 }, 400);
                 $("div.each-submenu").fadeOut(400);
@@ -91,7 +91,7 @@ function initEvent(){
                     bottom: 0
                 }, 400);
                 $("div#sublogo").stop().animate({
-                    marginTop: 0,
+                    marginLeft: 5,
                     opacity: 1.0
                 }, 400);
                 $("div.each-submenu[name!="+num+"]").fadeOut(400);
