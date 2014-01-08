@@ -125,6 +125,7 @@ div#submenu{
   top:130px;
   margin-left: -30px;
   opacity: 0;
+  display: none;
 }
 div.each-submenu{
   position:absolute;

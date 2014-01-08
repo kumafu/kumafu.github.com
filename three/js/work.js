@@ -53,14 +53,14 @@ function initEvent(){
             $("div#submenu").stop().animate({
                 opacity: 0,
                 marginLeft: -30
-            }, 400);
+            }, 400, function(){$("div#submenu").hide()});
             $("div#footer").stop().animate({
                 opacity: 0,
                 bottom: -43
             }, 400);
         }
         else{
-            $("div#submenu").stop().animate({
+            $("div#submenu").stop().show().animate({
                 opacity: 1.0,
                 marginLeft: 18
             }, 400);
