@@ -14,6 +14,10 @@ function init(){
     }
 
     $("#submenu div.submenu-works-title").append(THREEWEB.works[num].Title)
+    var title = $("<div>").addClass("eachwork-content");
+    title.append(THREEWEB.works[num].Title);
+    $("#eachwork-1").append(title);
+    
     for (var i in THREEWEB.works[num].Contents){
         var con = THREEWEB.works[num].Contents[i];
         var type = con[0];
@@ -54,10 +58,6 @@ function initEvent(){
                 opacity: 0,
                 bottom: -43
             }, 400);
-            $("div#sublogo").stop().animate({
-                marginTop: -200,
-                opacity: 0
-            }, 400);
         }
         else{
             $("div#submenu").stop().animate({
@@ -66,11 +66,7 @@ function initEvent(){
             }, 400);
             $("div#footer").stop().animate({
                 opacity: 1.0,
-                bottom: 10
-            }, 400);
-            $("div#sublogo").stop().animate({
-                marginTop: 0,
-                opacity: 1.0
+                bottom: 0
             }, 400);
         }
     });
