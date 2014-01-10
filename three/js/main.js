@@ -30,29 +30,37 @@ function init(){
 
     function handleComplete(event){
         var j = 0;
-		for (var i in THREEWEB.works){
+        for (var i = 0; i < 12; ++i){
             var work = THREEWEB.works[i];
-			var card = $("<div>")
-				.addClass("works-card")
-                .css("background-image","url(./img/works/"+work.MainImage+")")
-				.css('opacity',0);
-            if (j % 3 == 2){
+            var card = $("<div>")
+                .addClass("works-card")
+                .css('opacity',0);
+            if (i % 3 == 2){
                 card.addClass("works-card-return");
             }
-            var base = $("<div>")
-                .addClass("card-title-base")
-                .appendTo(card);
-            var title = $("<div>")
-                .addClass("card-title")
-                .append(work.Title)
-                .appendTo(base);
-			card.stop().animate({opacity: 1},2000);
+            if (work.Show){
+                card
+                    .css("background-image","url(./img/works/"+work.MainImage+")");
+                var base = $("<div>")
+                    .addClass("card-title-base")
+                    .appendTo(card);
+                var title = $("<div>")
+                    .addClass("card-title")
+                    .append(work.Title)
+                    .appendTo(base);
 
-			var a = $("<a>").attr("href","./work.html?id="+j).attr("data-num",j);
-			a.append(card);
-			$("#works-footer-spacer").before(a);
-            j++;
-		}
+                var a = $("<a>").attr("href","./work.html?id="+j).attr("data-num",j);
+                a.append(card);
+                $("#works-footer-spacer").before(a);
+            }
+            else{
+                card
+                    .css("background-color",THREEWEB.temp_colors[i]);
+                $("#works-footer-spacer").before(card);
+
+            }
+            card.stop().animate({opacity: 1},2000);
+        }
 
         initEvent();
         initAnchorEvent();
