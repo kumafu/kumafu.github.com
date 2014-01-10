@@ -28,6 +28,11 @@ function init(){
         'hideOnContentClick':true,
     });
 
+    for (var i in THREEWEB.news){
+        var news = THREEWEB.news[i];
+        $('#news-list').append(i + " : " + news + "<br>");
+    }
+
     function handleComplete(event){
         var j = 0;
         for (var i = 0; i < 12; ++i){
@@ -56,6 +61,14 @@ function init(){
             else{
                 card
                     .css("background-color",THREEWEB.temp_colors[i]);
+                var base = $("<div>")
+                    .addClass("card-title-base")
+                    .appendTo(card);
+                var title = $("<div style='text-align:center;'>")
+                    .addClass("card-title")
+                    .append("<img class='comingsoon-image' src='./img/coming_soon_w.png'><br>")
+                    .append("coming soon...")
+                    .appendTo(base);
                 $("#works-footer-spacer").before(card);
 
             }

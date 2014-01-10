@@ -1,19 +1,10 @@
 var THREEWEB = {};
 
-THREEWEB.temp_colors = [
-	"#BFBFBF",
-	"#F0FFD6",
-	"#B4C595",
-	"#AB9BAB",
-	"#E0C4A0",
-	"#FFE7D0",
-	"#FFE9FF",
-	"#A7D5E0",
-	"#909090",
-	"#909090",
-	"#E0C4A0",
-	"#AB9BAB"
-];
+
+THREEWEB.news = {
+	"2014/1/10":"WebサイトOpen!",
+	"2014/1/6":"THREE IS A MAGIC NUMBER."
+};
 
 THREEWEB.works = [
 	{
@@ -81,4 +72,19 @@ THREEWEB.works = [
 		"MainImage":"s-mov_sample_012.jpg",
 		"Show":false
 	},
+];
+
+THREEWEB.temp_colors = [
+	"#BFBFBF",
+	"#F0FFD6",
+	"#B4C595",
+	"#AB9BAB",
+	"#E0C4A0",
+	"#FFE7D0",
+	"#FFE9FF",
+	"#A7D5E0",
+	"#909090",
+	"#909090",
+	"#E0C4A0",
+	"#AB9BAB"
 ];

@@ -202,9 +202,10 @@ div#news-title{
 }
 div#news-list{
   float:left;
-  margin:12px;
-  width:831px;
-  height:50px;
+  margin:8px;
+  width:839px;
+  height:58px;
+  overflow: auto;
 }
 
 div#works-container a{
@@ -350,4 +351,9 @@ div#submenu div.submenu-works-title{
   position: absolute;
   top:10px;
   font-size:14pt;
+}
+
+img.comingsoon-image{
+  width:290px;
+  margin-top:20px;
 }
