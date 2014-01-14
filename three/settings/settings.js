@@ -2,8 +2,8 @@ var THREEWEB = {};
 
 
 THREEWEB.news = {
-	"2014/1/10":"WebサイトOpen!",
-	"2014/1/6":"THREE IS A MAGIC NUMBER."
+	"2014/01/14":"WEBサイト オープンしました。",
+	"2014/01/06":"株式会社 THREE IS A MAGIC NUMBER スタートしました。"
 };
 
 THREEWEB.works = [
