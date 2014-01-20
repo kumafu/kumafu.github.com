@@ -1,11 +1,17 @@
 var THREEWEB = {};
 
+/////////////////////
+//ここから編集可能
 
+/////////////////////
+//ニュースの編集
 THREEWEB.news = {
 	"2014/01/14":"WEBサイト オープンしました。",
 	"2014/01/06":"株式会社 THREE IS A MAGIC NUMBER スタートしました。"
 };
 
+/////////////////////
+//Worksの編集
 THREEWEB.works = [
 	{
 		"Title":"Spitz 2013",
@@ -13,9 +19,10 @@ THREEWEB.works = [
 		"Contents":[
 			["Image","mov_sample_001.jpg"],
 			["Youtube","UiYl1r5m5a0"],
+			["Vimeo","83292881"],
 			["Text","37th single 「シロクマ / ビギナー」<br>発売日：2010年9月29日<br><br>1. シロクマ ※メナード「イルネージュ」CMタイアップソング<br>2. ビギナー ※ゆうちょ銀行TVCMソング<br>3. ナイフ （Live from SPITZ JAMBOREE TOUR 2010）<br>4. シロクマ （Live from SPITZ JAMBOREE TOUR 2010）<br><br>3年ぶりのオリジナルアルバム、2010年10月27日リリース！！"]
 		],
-		"Show":false
+		"Show":true
 	},
 	{
 		"Title":"Spitz 2013",

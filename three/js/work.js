@@ -29,6 +29,9 @@ function init(){
             case "Youtube":
                 elem.append("<iframe width='580px' height='327px' src='//www.youtube.com/embed/"+con[1]+"?rel=0' frameborder='0' allowfullscreen></iframe>");
                 break;
+            case "Vimeo":
+                elem.append("<iframe src='//player.vimeo.com/video/"+con[1]+"' width='580px' height='327px' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>");
+                break;
             case "Text":
                 elem.append(con[1]);
                 break;
