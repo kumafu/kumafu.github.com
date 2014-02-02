@@ -54,7 +54,7 @@ function init(){
                     .append(work.Title)
                     .appendTo(base);
 
-                var a = $("<a>").attr("href","./work.html?id="+j).attr("data-num",j);
+                var a = $("<a>").attr("href","./work.html?id="+i).attr("data-num",j);
                 a.append(card);
                 $("#works-footer-spacer").before(a);
             }

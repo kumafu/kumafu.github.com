@@ -6,6 +6,8 @@ var THREEWEB = {};
 /////////////////////
 //ニュースの編集
 THREEWEB.news = {
+	"2014/02/03":"Works ENNE Massaggio Sportivoを追加しました。",
+	"2014/02/03 ":"Works 日本文教出版「形」301号を追加しました。",
 	"2014/01/14":"WEBサイト オープンしました。",
 	"2014/01/06":"株式会社 THREE IS A MAGIC NUMBER スタートしました。"
 };
@@ -14,20 +16,23 @@ THREEWEB.news = {
 //Worksの編集
 THREEWEB.works = [
 	{
-		"Title":"Spitz 2013",
-		"MainImage":"s-mov_sample_001.jpg",
+		"Title":"日本文教出版「形」301号",
+		"MainImage":"Forme_s_301.png",
 		"Contents":[
-			["Image","mov_sample_001.jpg"],
-			["Youtube","UiYl1r5m5a0"],
-			["Vimeo","83292881"],
-			["Text","37th single 「シロクマ / ビギナー」<br>発売日：2010年9月29日<br><br>1. シロクマ ※メナード「イルネージュ」CMタイアップソング<br>2. ビギナー ※ゆうちょ銀行TVCMソング<br>3. ナイフ （Live from SPITZ JAMBOREE TOUR 2010）<br>4. シロクマ （Live from SPITZ JAMBOREE TOUR 2010）<br><br>3年ぶりのオリジナルアルバム、2010年10月27日リリース！！"]
+			["Image","Forme_301.png"],
+			["Vimeo","85637790"],
+			["Text","日本文教出版「形」301号 / Nihon Bunkyou Shuppan Co., Ltd. Forme No.301<br><A Href='http://www.nichibun-g.co.jp/column/education/forme/'>"]
 		],
 		"Show":true
 	},
 	{
-		"Title":"Spitz 2013",
-		"MainImage":"s-mov_sample_002.jpg",
-		"Show":false
+		"Title":"ENNE Massaggio Sportivo",
+		"MainImage":"ENNE_sportivo_S.jpg",
+		"Contents":[
+			["Image","ENNE_sportivo.jpg"],
+			["Text","<A Href='http://enne.tokyo.jp' style='text-decoration:underline;'>ENNE Massaggio Sportivo</A>"]
+		],
+		"Show":true
 	},
 	{
 		"Title":"Spitz 2013",
