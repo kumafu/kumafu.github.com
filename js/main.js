@@ -11,7 +11,6 @@ function init(){
     var feed = new Instafeed({
         get: 'user',
         userId: 3100907,
-        tagName: 'あーマップ',
         accessToken: '1449629.114ad56.71120074c8bc4e2e952f18890106423d',
         clientId: '114ad5620479499b9302a2c2df8e6f7e',
         limit: 60,
