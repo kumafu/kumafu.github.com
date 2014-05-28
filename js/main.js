@@ -4,14 +4,14 @@ var selectedRows = [];
 var tabs;
 var data_dir = "";
 $(document).ready(function(){
-    getFeed();
+    init();
 });
 
 function init(){
     var feed = new Instafeed({
         get: 'tagged',
         tagName: 'awesome',
-        clientId: 'YOUR_CLIENT_ID'
+        clientId: '114ad5620479499b9302a2c2df8e6f7e'
     });
     feed.run();
 }
