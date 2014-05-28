@@ -1,0 +1,22 @@
+html, body {
+  font-size: 10pt;
+}
+
+div.title{
+	margin-top: 30px;
+	margin-bottom: 10px;
+	text-align:center;
+	font-size:24pt;
+}
+
+div.sub-title{
+	font-style: italic;
+	font-family: Verdana, Arial, sans-serif;
+	text-align: center;
+	font-size:12pt;
+}
+
+div.map{
+	text-align: center;
+	margin-top: 20px;
+}
