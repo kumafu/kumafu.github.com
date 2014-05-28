@@ -14,9 +14,9 @@ function init(){
         accessToken: '1449629.114ad56.71120074c8bc4e2e952f18890106423d',
         clientId: '114ad5620479499b9302a2c2df8e6f7e',
         limit: 60,
-		// filter: function(image) {
-		// 	return image.tags.indexOf('あーマップ') >= 0;
-		// }
+		filter: function(image) {
+			return image.tags.indexOf('あーマップ') >= 0;
+		}
     });
     feed.run();
 }
