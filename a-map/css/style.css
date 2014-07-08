@@ -12,6 +12,7 @@ div.title{
 div.sub-title{
 	font-style: italic;
 	font-family: Verdana, Arial, sans-serif;
+	margin-bottom: 10px;
 	text-align: center;
 	font-size:12pt;
 }
@@ -19,4 +20,13 @@ div.sub-title{
 div.map{
 	text-align: center;
 	margin-top: 20px;
+}
+
+div.login{
+	text-align: center;
+	font-size:14pt;
+}
+
+div.main{
+	display:none;
 }
