@@ -119,6 +119,7 @@ function createItem(_obj){
 	});
 
 	div.click(function(){
+		window.location.hash = 'top';
 		google.maps.event.trigger( marker, 'click' );
 	});
 
