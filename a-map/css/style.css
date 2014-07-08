@@ -40,8 +40,8 @@ div.item-area{
 div.item-body{
 	text-align: left;
 	border: 1px solid #ccc;
-	width: 800px;
-	height: 330px;
+	width: 790px;
+	height: 320px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	padding: 5px;
@@ -51,4 +51,5 @@ div.item-body img{
 	float:left;
 	width: 320px;
 	height: 320px;
+	margin-left:10px;
 }
