@@ -25,12 +25,15 @@ function getUserInfo(){
 
 	$.ajax('https://api.instagram.com/v1/users/self', {
 		type: 'GET',
-		dataType: 'json',
+		dataType: 'jsonp',
 		data:{
 			'access_token':ACCESS_TOKEN
 		},
-		success: function(_json) {
-			console.log(_json);
+		error: function(jqXHR, textStatus, errorThrown) {
+			alert(textStatus);
+		},
+		success: function(data, textStatus, jqXHR) {
+			console.log(data);
 		}
 	});
 }
