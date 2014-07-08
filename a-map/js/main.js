@@ -23,7 +23,7 @@ function init(){
 
 function getUserInfo(){
 
-	$.getJSON('https://api.instagram.com/v1/users/self', {
+	$.ajax('https://api.instagram.com/v1/users/self', {
 		type: 'GET',
 		dataType: 'json',
 		data:{
