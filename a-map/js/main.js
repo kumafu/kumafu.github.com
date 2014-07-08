@@ -5,6 +5,7 @@ var tabs;
 var data_dir = "";
 var aMapTag = "あーマップ";
 var map;
+var mapcenter;
 
 var ACCESS_TOKEN = "";
 $(document).ready(function(){
@@ -20,10 +21,10 @@ $(document).ready(function(){
 });
 
 function init(){
-	var latlng = new google.maps.LatLng(35.67208,139.653397);
+	mapcenter = new google.maps.LatLng(35.67208,139.653397);
 	var opts = {
 		zoom: 12,
-		center: latlng,
+		center: mapcenter,
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	};
 	map = new google.maps.Map(document.getElementById("map_canvas"), opts);
@@ -51,7 +52,9 @@ function gotoMain(_data){
 	var username = _data.data.username;
 	$('#user-info').html("<span>"+username+" でログイン中</span>")
 	$('#login').hide();
-	$('#main').show();
+	$('#main').show(); 
+	google.maps.event.trigger(map, 'resize');
+	map.setCenter(mapcenter);
 	getFeed();
 
 }
