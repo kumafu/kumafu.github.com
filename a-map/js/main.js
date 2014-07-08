@@ -34,6 +34,15 @@ function getUserInfo(){
 		},
 		success: function(data, textStatus, jqXHR) {
 			console.log(data);
+			gotoMain(data);
 		}
 	});
+}
+
+function gotoMain(_data){
+	var username = _data.data.username;
+	$('#user-info').html("<span>"+username+" でログイン中</span>")
+	$('#login').hide();
+	$('#main').show();
+
 }
