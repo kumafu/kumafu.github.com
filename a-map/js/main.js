@@ -44,6 +44,7 @@ function gotoMain(_data){
 	$('#user-info').html("<span>"+username+" でログイン中</span>")
 	$('#login').hide();
 	$('#main').show();
+	getFeed();
 
 }
 
