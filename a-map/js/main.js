@@ -101,7 +101,7 @@ function createItem(_obj){
 	});
 
 	var infoWindow = new google.maps.InfoWindow({
-		content:locationName + "<img src='"+imageURL+"' width='100px'>",
+		content:"<p><b>"+locationName + "</b></p><img src='"+imageURL+"' width='100px'>",
 	});
 
 	node['imageURL'] = imageURL;
