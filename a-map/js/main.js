@@ -75,6 +75,6 @@ function createItem(_obj){
 	var lon = _obj.location.longitude;
 	var locationName = _obj.location.name;
 
-	var div = $("<div>").addClass("item-body").append("<img src='"+imageURL+"'>").append(locationName+"<br>"+caption);
+	var div = $("<div>").addClass("item-body").append("<img src='"+imageURL+"'>").append("<b>"+locationName+"</b><br>"+caption);
 	$("#item-area").append(div);
 }

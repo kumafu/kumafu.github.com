@@ -33,12 +33,16 @@ div.main{
 	text-align: center;
 	display:none;
 }
+div.item-area{
+	margin:0 auto;
+}
 div.item-body{
-	background-color: #ccc;
+	text-align: left;
+	border: 1px solid #ccc;
 	width: 800px;
 	height: 330px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 
 }
 div.item-body img{
