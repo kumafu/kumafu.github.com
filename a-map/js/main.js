@@ -4,6 +4,7 @@ var selectedRows = [];
 var tabs;
 var data_dir = "";
 var aMapTag = "あーマップ";
+var map;
 
 var ACCESS_TOKEN = "";
 $(document).ready(function(){
@@ -19,6 +20,13 @@ $(document).ready(function(){
 });
 
 function init(){
+	var latlng = new google.maps.LatLng(35.67208,139.653397);
+	var opts = {
+		zoom: 12,
+		center: latlng,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	map = new google.maps.Map(document.getElementById("map_canvas"), opts);
 }
 
 function getUserInfo(){
@@ -77,4 +85,10 @@ function createItem(_obj){
 
 	var div = $("<div>").addClass("item-body").append("<img src='"+imageURL+"'>").append("<b>"+locationName+"</b><br>"+caption);
 	$("#item-area").append(div);
+
+	var m_latlng = new google.maps.LatLng(lat,lon);
+	var marker = new google.maps.Marker({
+		position: m_latlng,
+		map: map
+	});
 }

@@ -33,11 +33,11 @@ div.user-info{
 }
 div.main{
 	text-align: center;
+	margin:0 auto;
+	width: 800px;
 	display:none;
 }
 div.item-area{
-	margin:0 auto;
-	width: 800px;
 }
 div.item-body{
 	text-align: left;
