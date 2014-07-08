@@ -3,6 +3,7 @@ var selectedFile = [];
 var selectedRows = [];
 var tabs;
 var data_dir = "";
+var aMapTag = "あーマップ";
 
 var ACCESS_TOKEN = "";
 $(document).ready(function(){
@@ -11,7 +12,6 @@ $(document).ready(function(){
 		var hash = location.hash;
 		if (hash.indexOf('#access_token=') != -1){
 			ACCESS_TOKEN = hash.replace('#access_token=','');
-			alert(ACCESS_TOKEN);
 			getUserInfo();
 		}
 	}
@@ -45,4 +45,20 @@ function gotoMain(_data){
 	$('#login').hide();
 	$('#main').show();
 
+}
+
+function getFeed(){
+	$.ajax('https://api.instagram.com/v1/tags/'+aMapTag+'/media/recent', {
+		type: 'GET',
+		dataType: 'jsonp',
+		data:{
+			'access_token':ACCESS_TOKEN
+		},
+		error: function(jqXHR, textStatus, errorThrown) {
+			alert(textStatus);
+		},
+		success: function(data, textStatus, jqXHR) {
+			console.log(data);
+		}
+	});
 }

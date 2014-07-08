@@ -26,7 +26,10 @@ div.login{
 	text-align: center;
 	font-size:14pt;
 }
-
+div.user-info{
+	
+}
 div.main{
+	text-align: center;
 	display:none;
 }
