@@ -119,7 +119,7 @@ function createItem(_obj){
 	});
 
 	div.click(function(){
-		marker.click();
+		google.maps.event.trigger( marker, 'click' );
 	});
 
 	itemList.push(node);
