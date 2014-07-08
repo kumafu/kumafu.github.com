@@ -7,6 +7,8 @@ var aMapTag = "あーマップ";
 var map;
 var mapcenter;
 
+var itemList = [];
+
 var ACCESS_TOKEN = "";
 $(document).ready(function(){
 	// var params = get_url_vars();
@@ -80,11 +82,13 @@ function getFeed(){
 }
 
 function createItem(_obj){
+	var node = {};
 	var imageURL = _obj.images.standard_resolution.url;
 	var caption = _obj.caption.text;
 	var lat = _obj.location.latitude;
 	var lon = _obj.location.longitude;
 	var locationName = _obj.location.name;
+
 
 	var div = $("<div>").addClass("item-body").append("<img src='"+imageURL+"'>").append("<b>"+locationName+"</b><br>"+caption);
 	$("#item-area").append(div);
@@ -92,6 +96,26 @@ function createItem(_obj){
 	var m_latlng = new google.maps.LatLng(lat,lon);
 	var marker = new google.maps.Marker({
 		position: m_latlng,
+		title:locationName,
 		map: map
+	});
+
+	var infoWindow = new google.maps.InfoWindow({
+		content:locationName + "<img src='"+imageURL+"' width='100px'>",
+	});
+
+	node['imageURL'] = imageURL;
+	node['caption'] = caption;
+	node['lat'] = lat;
+	node['lon'] = lon;
+	node['locationName'] = locationName;
+	node['marker'] = marker;
+	node['infoWindow'] = infoWindow;
+
+	
+	google.maps.event.addListener(marker, 'click', function() {
+	infowindow.open(map,marker);
+		$("#btn_show").attr("disabled","disabled");
+		$("#btn_hide").attr("disabled",false);
 	});
 }
