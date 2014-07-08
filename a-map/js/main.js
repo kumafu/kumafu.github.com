@@ -92,7 +92,6 @@ function createItem(_obj){
 	var m_latlng = new google.maps.LatLng(lat,lon);
 	var marker = new google.maps.Marker({
 		position: m_latlng,
-		animation: google.maps.Animation.DROP,
 		map: map
 	});
 }
