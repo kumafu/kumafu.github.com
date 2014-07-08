@@ -65,7 +65,7 @@ function getAccessToken(_code){
 			'grant_type':'authorization_code',
 			'redirect_uri':'http://kumafu.github.io/a-map/',
 			'code':_code
-		}
+		},
 		success: function(_json) {
 			console.log(_json);
 		}
