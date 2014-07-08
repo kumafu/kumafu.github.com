@@ -60,6 +60,21 @@ function getFeed(){
 		},
 		success: function(data, textStatus, jqXHR) {
 			console.log(data);
+			for (var i in data.data){
+				var obj = data.data[i];
+				createItem(obj);
+			}
 		}
 	});
+}
+
+function createItem(_obj){
+	var imageURL = _obj.images.standard_resolution.url;
+	var caption = _obj.caption.text;
+	var lat = _obj.location.latitude;
+	var lon = _obj.location.longitude;
+	var locationName = _obj.location.name;
+
+	var div = $("<div>").addClass("item-body").append("<img src='"+imageURL+"'>").append(locationName+"<br>"+caption);
+	$("#item-area").append(div);
 }

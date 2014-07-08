@@ -27,9 +27,23 @@ div.login{
 	font-size:14pt;
 }
 div.user-info{
-	
+
 }
 div.main{
 	text-align: center;
 	display:none;
+}
+div.item-body{
+	background-color: #ccc;
+	width: 800px;
+	height: 330px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+
+}
+div.item-body img{
+	float:left;
+	width: 320px;
+	height: 320px;
+	margin: 5px;
 }
