@@ -35,6 +35,7 @@ div.main{
 }
 div.item-area{
 	margin:0 auto;
+	width: 800px;
 }
 div.item-body{
 	text-align: left;
@@ -43,11 +44,11 @@ div.item-body{
 	height: 330px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	padding: 5px;
 
 }
 div.item-body img{
 	float:left;
 	width: 320px;
 	height: 320px;
-	margin: 5px;
 }
