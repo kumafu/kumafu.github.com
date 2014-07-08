@@ -101,7 +101,7 @@ function createItem(_obj){
 	});
 
 	var infoWindow = new google.maps.InfoWindow({
-		content:"<p><b>"+locationName + "</b></p><img src='"+imageURL+"' width='100px'>",
+		content:"<b>"+locationName + "</b><br><img src='"+imageURL+"' width='100px'>",
 	});
 
 	node['imageURL'] = imageURL;
@@ -116,6 +116,10 @@ function createItem(_obj){
 	infoWindow.open(map,marker);
 		$("#btn_show").attr("disabled","disabled");
 		$("#btn_hide").attr("disabled",false);
+	});
+
+	div.click(function(){
+		marker.click();
 	});
 
 	itemList.push(node);

@@ -47,7 +47,11 @@ div.item-body{
 	margin-top: 10px;
 	margin-bottom: 10px;
 	padding: 5px;
+	cursor: pointer;
 
+}
+div.item-body:hover{
+	background-color: #eee;
 }
 div.item-body img{
 	float:left;
