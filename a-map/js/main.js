@@ -89,9 +89,10 @@ function createItem(_obj){
 	var div = $("<div>").addClass("item-body").append("<img src='"+imageURL+"'>").append("<b>"+locationName+"</b><br>"+caption);
 	$("#item-area").append(div);
 
-	// var m_latlng = new google.maps.LatLng(lat,lon);
-	// var marker = new google.maps.Marker({
-	// 	position: m_latlng,
-	// 	map: map
-	// });
+	var m_latlng = new google.maps.LatLng(lat,lon);
+	var marker = new google.maps.Marker({
+		position: m_latlng,
+		animation: google.maps.Animation.DROP,
+		map: map
+	});
 }
