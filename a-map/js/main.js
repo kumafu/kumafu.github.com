@@ -112,10 +112,11 @@ function createItem(_obj){
 	node['marker'] = marker;
 	node['infoWindow'] = infoWindow;
 
-	
 	google.maps.event.addListener(marker, 'click', function() {
-	infowindow.open(map,marker);
+	infoWindow.open(map,marker);
 		$("#btn_show").attr("disabled","disabled");
 		$("#btn_hide").attr("disabled",false);
 	});
+
+	itemList.push(node);
 }
