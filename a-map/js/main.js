@@ -91,7 +91,7 @@ function createItem(_obj){
 	var locationName = _obj.location.name;
 
 
-	var div = $("<div>").addClass("item-body").append("<img src='"+imageURL+"'>").append("<b>"+locationName+"</b><br>"+caption);
+	var div = $("<div>").addClass("item-body").append("<img src='"+imageURL+"'>").append("<b>"+locationName+"</b>");
 	$("#item-area").append(div);
 
 	var m_latlng = new google.maps.LatLng(lat,lon);
