@@ -43,6 +43,8 @@ div.item-area{
 	overflow: auto;
 }
 div.item-body{
+	font-size: 10pt;
+	overflow: hidden;
 	text-align: left;
 	border: 1px solid #ccc;
 	width: 160px;
