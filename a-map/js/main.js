@@ -66,6 +66,7 @@ function getFeed(){
 		type: 'GET',
 		dataType: 'jsonp',
 		data:{
+			'count':35,
 			'access_token':ACCESS_TOKEN
 		},
 		error: function(jqXHR, textStatus, errorThrown) {
