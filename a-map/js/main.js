@@ -89,9 +89,10 @@ function createItem(_obj){
 	var lat = _obj.location.latitude;
 	var lon = _obj.location.longitude;
 	var locationName = _obj.location.name;
+	var likeCount = _obj.likes.count;
 
 
-	var div = $("<div>").addClass("item-body").append("<img src='"+imageURL+"'>").append("<b>"+locationName+"</b>");
+	var div = $("<div>").addClass("item-body").append("<img src='"+imageURL+"'>").append("<b>"+locationName+"</b><br>"+likeCount+" Likes");
 	$("#item-area").append(div);
 
 	var m_latlng = new google.maps.LatLng(lat,lon);
@@ -111,6 +112,7 @@ function createItem(_obj){
 	node['lon'] = lon;
 	node['locationName'] = locationName;
 	node['marker'] = marker;
+	node['likeCount'] = likeCount;
 	node['infoWindow'] = infoWindow;
 
 	google.maps.event.addListener(marker, 'click', function() {
