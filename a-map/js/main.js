@@ -8,6 +8,7 @@ var map;
 var mapcenter;
 
 var itemList = [];
+var opened_iw;
 
 var ACCESS_TOKEN = "";
 $(document).ready(function(){
@@ -116,7 +117,9 @@ function createItem(_obj){
 	node['infoWindow'] = infoWindow;
 
 	google.maps.event.addListener(marker, 'click', function() {
-	infoWindow.open(map,marker);
+		if (opened_iw) opened_iw.close();
+		opened_iw = infoWindow;
+		infoWindow.open(map,marker);
 		$("#btn_show").attr("disabled","disabled");
 		$("#btn_hide").attr("disabled",false);
 	});
