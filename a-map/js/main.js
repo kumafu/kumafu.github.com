@@ -13,11 +13,16 @@ var opened_iw;
 var ACCESS_TOKEN = "";
 $(document).ready(function(){
 	// var params = get_url_vars();
-	if (location.hash){
+	if ($.session.get('ACCESS_TOKEN')){
+		ACCESS_TOKEN = $.session.get('ACCESS_TOKEN');
+		getUserInfo();
+	}
+	else if (location.hash){
 		var hash = location.hash;
 		if (hash.indexOf('#access_token=') != -1){
 			ACCESS_TOKEN = hash.replace('#access_token=','');
-			getUserInfo();
+			$.session.set('ACCESS_TOKEN',ACCESS_TOKEN);
+			location.replace(location.href.replace(hash,""));
 		}
 	}
     init();
