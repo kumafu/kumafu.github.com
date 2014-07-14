@@ -13,7 +13,7 @@ var opened_iw;
 var ACCESS_TOKEN = "";
 $(document).ready(function(){
 	// var params = get_url_vars();
-	if ($.session.get('ACCESS_TOKEN')){
+	if ($.cookie('ACCESS_TOKEN')){
 		ACCESS_TOKEN = $.cookie('ACCESS_TOKEN');
 		getUserInfo();
 	}
