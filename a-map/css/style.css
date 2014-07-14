@@ -65,7 +65,7 @@ div.item-body img{
 }
 
 div.infowindow{
-	width: 640px;  
+	width: 500px;  
 	height: 320px;  
 	font-family:'Hiragino Mincho ProN', serif !important;
 }
@@ -74,6 +74,7 @@ img.iw-image{
 	width: 320px;
 	height: 320px;
 	float: left;
+	margin-right: 5px;
 }
 
 div.iw-location-name{
