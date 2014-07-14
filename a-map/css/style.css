@@ -63,3 +63,8 @@ div.item-body img{
 	height: 40px;
 	margin-right:10px;
 }
+
+div.infowindow{
+    width: 400px;  
+    height: 400px;  
+}
