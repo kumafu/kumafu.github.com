@@ -20,7 +20,6 @@ div.sub-title{
 }
 
 div.main{
-	text-align: center;
 	margin:0 auto;
 	width: 1000px;
 	display:none;
@@ -35,6 +34,7 @@ div.login{
 	font-size:14pt;
 }
 div.user-info{
+	text-align: center;
 
 }
 div.item-area{
@@ -65,6 +65,16 @@ div.item-body img{
 }
 
 div.infowindow{
-    width: 400px;  
-    height: 400px;  
+	width: 320px;  
+	height: 480px;  
+	font-family:'Hiragino Mincho ProN', serif !important;
+}
+
+div.iw-location-name{
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+div.iw-caption{
+
 }
