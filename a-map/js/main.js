@@ -109,6 +109,7 @@ function createItem(_obj){
 	});
 
 	var infoWindow = new google.maps.InfoWindow({
+		maxWidth: 600,
 		content:"<div class='infowindow'><img class='iw-image' src='"+imageURL+"'><div class='iw-location-name'><b>"+locationName + "</b></div><div><a href='https://www.google.co.jp/search?q="+locationName+"' target='_blank'>お店をググる</a></div><div class='iw-caption'>"+caption+"</div></div>"
 	});
 
