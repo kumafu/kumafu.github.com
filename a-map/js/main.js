@@ -92,6 +92,9 @@ function createItem(_obj){
 	var node = {};
 	var imageURL = _obj.images.standard_resolution.url;
 	var caption = _obj.caption.text;
+	if (_obj.location == null){
+		return;
+	}
 	var lat = _obj.location.latitude;
 	var lon = _obj.location.longitude;
 	var locationName = _obj.location.name;
