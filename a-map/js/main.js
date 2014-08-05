@@ -73,7 +73,8 @@ function getLocation(){
 		console.log(pos);
         var currentPos = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
         var currentMarker = new google.maps.Marker({
-            position: currentPos
+            position: currentPos,
+            icon: './images/bluecircle.png'
         });
         currentMarker.setMap(map);
 
