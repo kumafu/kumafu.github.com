@@ -31,7 +31,7 @@ $(document).ready(function(){
 function init(){
 	mapcenter = new google.maps.LatLng(35.67208,139.653397);
 	var opts = {
-		zoom: 12,
+		zoom: 14,
 		center: mapcenter,
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	};
