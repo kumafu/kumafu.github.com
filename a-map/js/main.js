@@ -112,7 +112,7 @@ function createItem(_obj){
 	});
 
 	var infoWindow = new google.maps.InfoWindow({
-		content:"<div class='infowindow'><img class='iw-image' src='"+imageURL+"'><div class='iw-right-pane'><div class='iw-location-name'><b>"+locationName + "</b></div><div><a href='https://www.google.co.jp/search?q="+locationName+"' target='_blank'>お店をググる</a></div><div class='iw-caption'>"+caption+"</div></div></div>"
+		content:"<div class='infowindow'><img class='iw-image' src='"+imageURL+"'><div class='iw-location-name'><b>"+locationName + "</b></div><div><a href='https://www.google.co.jp/search?q="+locationName+"' target='_blank'>お店をググる</a></div><div class='iw-caption'>"+caption+"</div></div>"
 	});
 
 	node['imageURL'] = imageURL;
