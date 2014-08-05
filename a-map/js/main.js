@@ -71,6 +71,13 @@ function gotoMain(_data){
 function getLocation(){
 	navigator.geolocation.getCurrentPosition(function(pos) {
 		console.log(pos);
+        var currentPos = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
+        var currentMarker = new google.maps.Marker({
+            position: currentPos
+        });
+        currentMarker.setMap(map);
+
+        map.panTo(currentPos);
 	});
 }
 
