@@ -65,19 +65,19 @@ div.item-body img{
 }
 
 div.infowindow{
-	/*width: 500px;
-	height: 320px;  */
+	width: 320px;
+	height: 320px;  
 	font-family:'Hiragino Mincho ProN', serif !important;
 }
 
 img.iw-image{
-	width: 320px;
-	height: 320px;
+	width: 200px;
+	height: 200px;
 	float: left;
 	margin-right: 5px;
 }
 div.iw-right-pane{
-	width:175px;
+	width:105px;
 	float:right;
 }
 div.iw-location-name{
