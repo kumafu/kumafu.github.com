@@ -64,7 +64,14 @@ function gotoMain(_data){
 	google.maps.event.trigger(map, 'resize');
 	map.setCenter(mapcenter);
 	getFeed();
+	getLocation();
 
+}
+
+function getLocation(){
+	navigator.geolocation.getCurrentPosition(function(pos) {
+		console.log(pos);
+	});
 }
 
 function getFeed(){
