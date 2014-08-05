@@ -76,7 +76,10 @@ img.iw-image{
 	float: left;
 	margin-right: 5px;
 }
-
+div.iw-right-pane{
+	width:175px;
+	float:right;
+}
 div.iw-location-name{
 	font-size: 14pt;
 	font-weight: bold;
